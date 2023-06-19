@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
 	int a, b;
 
@@ -19,12 +19,12 @@ int main()
 			putchar(' ');
 			putchar((b / 10) + '0');
 			putchar((b % 10) + '0');
-			
+
 			if (a == 98 && b == 99)
 			{
 				continue;
 			}
-			
+
 			putchar(',');
 			putchar(' ');
 		}
