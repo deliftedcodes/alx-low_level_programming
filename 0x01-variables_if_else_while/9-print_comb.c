@@ -8,11 +8,16 @@
 
 int main(void)
 {
-	char i = 'a';
+	char i = '0';
 
-	while (i <= 'z')
+	while (i <= '9')
 	{
 		putchar(i);
+
+		if (i == '9')
+			break;
+		putchar(',');
+		putchar(' ');
 		i++;
 	}
 	putchar('\n');
